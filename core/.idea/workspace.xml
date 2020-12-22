@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="40263367-9ea4-451c-aea6-ef6ad96d9120" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/ClientsOnLessons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/Lesson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/actor/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/info/ComplaintModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/info/NotificationModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/info/RequestModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/person/SignInModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/ClientsOnLessonsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/ComplaintRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/LessonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/NotificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/RequestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ui/src/models/lesson.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ui/src/models/notification.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ui/src/models/request.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ui/src/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/configuration/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/configuration/SSEController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/configuration/SSEController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/configuration/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/configuration/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/configuration/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/configuration/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/controllers/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/controllers/ClientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/controllers/DataController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/controllers/DriverController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/controllers/GridController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/controllers/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/controllers/StartPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/Credentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/Credentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/Passport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/Trip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/actor/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/actor/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/actor/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/entities/actor/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/info/AddressModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/info/CarModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/info/CredentialModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/info/CredentialModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/info/PassportModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/person/GetPersonByIdModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/person/IdAndPersonTypeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/person/IdAndPersonTypeModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/person/RegistrationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/person/RegistrationModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/person/SignInResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/person/SignInResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/response/ApiResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/response/ApiResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/response/ResponseOrMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/response/ResponseOrMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/table/GetDataModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/table/GridDataModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/table/MetaDataModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/trip/SetGradeModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/models/trip/TripModelRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/providers/ClientDataProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/providers/DriverDataProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/providers/IDataProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/providers/TripDataProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/AddressRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/AdminRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/CarRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/ClientRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/CredentialsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/DriverRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/JPARepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/JPARepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/repository/TripRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/service/AdminService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/service/ClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/service/DataService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/service/DriverService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/service/Generator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/service/GetDataService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kspt/app/service/PersonService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/common-table/common-table.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/common-table/common-table.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/common-table/common-table.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/common-table/common-table.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/dialog/dialog.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/dialog/dialog.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/dialog/dialog.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/dialog/dialog.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/snack-bar/snack-bar.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/snack-bar/snack-bar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/snack-bar/snack-bar.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/snack-bar/snack-bar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/stepper-registration-for-driver/stepper-registration-for-driver.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/models/complaint.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/stepper-registration-for-driver/stepper-registration-for-driver.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/stepper-registration-for-driver/stepper-registration-for-driver.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/stepper-registration-for-driver/stepper-registration-for-driver.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/top-bar/top-bar.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/top-bar/top-bar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/top-bar/top-bar.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/components/top-bar/top-bar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/open.snack.bar.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/admin/admin.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/admin/admin.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/admin/admin.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/admin/admin.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/auth/forgot-password/forgot-password.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/auth/forgot-password/forgot-password.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/auth/forgot-password/forgot-password.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/auth/forgot-password/forgot-password.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/auth/sign-in/sign-in.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/app/pages/auth/sign-in/sign-in.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/auth/sign-in/sign-in.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/app/pages/auth/sign-in/sign-in.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/auth/sign-up/sign-up.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/app/pages/auth/sign-up/sign-up.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/auth/sign-up/sign-up.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/app/pages/auth/sign-up/sign-up.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/home/home.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/home/home.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/home/home.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/home/home.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/not-found/not-found.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/not-found/not-found.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/not-found/not-found.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/not-found/not-found.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/profile/profile.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/app/pages/profile/profile.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/app/pages/profile/profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/profile/profile.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/app/pages/profile/profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/request-car/request-car.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/request-car/request-car.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/request-car/request-car.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/request-car/request-car.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/take-trip/take-trip.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/take-trip/take-trip.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/take-trip/take-trip.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/app/pages/take-trip/take-trip.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/core/enviroment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/core/enviroment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/models/actor/client.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/models/actor/driver.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/models/actor/driver.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/models/actor/person.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/models/actor/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/models/trip.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/models/trip.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/services/admin.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/services/client.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/services/data.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/services/driver.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/services/grid.data.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/src/styles.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="talanto" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1lKuQWd3rfqlgVNkuxnIRkM9iTb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15429688" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="talanto.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kspt.app.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40263367-9ea4-451c-aea6-ef6ad96d9120" name="Default Changelist" comment="" />
+      <created>1607358087105</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607358087105</updated>
+      <workItem from="1607358091616" duration="7899000" />
+      <workItem from="1607425323553" duration="5738000" />
+      <workItem from="1607679798242" duration="5518000" />
+      <workItem from="1607757441156" duration="20958000" />
+      <workItem from="1608363817603" duration="8113000" />
+      <workItem from="1608496882465" duration="7399000" />
+      <workItem from="1608556305098" duration="5755000" />
+      <workItem from="1608581124851" duration="4053000" />
+      <workItem from="1608636801245" duration="923000" />
+      <workItem from="1608637754289" duration="272000" />
+      <workItem from="1608638099078" duration="504000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="761" y="389" width="398" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1607359702483">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="761" y="389" width="398" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607359702483" />
+    <state x="595" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607361898693">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="595" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607361898693" />
+    <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607363752547">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607363752547" />
+    <state x="711" y="371" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1608637912582">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="711" y="371" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608637912582" />
+    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1608637732532">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1180" y="278" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608363863940" />
+    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608637732532" />
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1608588644047">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608588644047" />
+    <state width="1877" height="299" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607766220774" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1608588644047">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608588644047" />
+    <state width="1877" height="299" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607766220774" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1608588644047">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608588644047" />
+    <state width="1877" height="299" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607766220774" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1608588644047">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608588644047" />
+    <state width="1877" height="299" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607766220774" />
+    <state width="1877" height="274" key="GridCell.Tab.1.bottom" timestamp="1608588644048">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608588644048" />
+    <state width="1877" height="485" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607766220615" />
+    <state width="1877" height="274" key="GridCell.Tab.1.center" timestamp="1608588644048">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608588644048" />
+    <state width="1877" height="485" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607766220615" />
+    <state width="1877" height="274" key="GridCell.Tab.1.left" timestamp="1608588644047">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608588644047" />
+    <state width="1877" height="485" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607766220615" />
+    <state width="1877" height="274" key="GridCell.Tab.1.right" timestamp="1608588644048">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608588644048" />
+    <state width="1877" height="485" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607766220615" />
+    <state width="1877" height="274" key="GridCell.Tab.2.bottom" timestamp="1608588644048">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608588644048" />
+    <state width="1877" height="299" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607766220600" />
+    <state width="1877" height="274" key="GridCell.Tab.2.center" timestamp="1608588644048">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608588644048" />
+    <state width="1877" height="299" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607766220600" />
+    <state width="1877" height="274" key="GridCell.Tab.2.left" timestamp="1608588644048">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608588644048" />
+    <state width="1877" height="299" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607766220600" />
+    <state width="1877" height="274" key="GridCell.Tab.2.right" timestamp="1608588644048">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608588644048" />
+    <state width="1877" height="299" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607766220600" />
+    <state x="648" y="162" key="SettingsEditor" timestamp="1608638403186">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="648" y="162" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608638403186" />
+    <state x="771" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1608638114989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1149" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608637819161" />
+    <state x="771" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608638114989" />
+    <state x="-1396" y="259" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1608497480163">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1396" y="259" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608497480163" />
+    <state x="667" y="276" width="777" height="488" key="find.popup" timestamp="1608638330449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1253" y="276" width="586" height="732" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1607807166954" />
+    <state x="667" y="276" width="777" height="488" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608638330449" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kspt/app/controllers/UserController.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
