@@ -39,7 +39,6 @@ public class UserController {
         return service.setRequest(request);
     }
 
-
     @GetMapping("/getNotifications/{userId}")
     public List<Notification> getNotifications(@PathVariable Long userId) {
         return service.getNotifications(userId);
@@ -51,7 +50,12 @@ public class UserController {
     }
 
     @GetMapping("/getLessons")
-    public List<Lesson> getLessonss() {
+    public List<Lesson> getLessons() {
         return service.getLessons();
+    }
+
+    @GetMapping("/getUsers")
+    public List<User> getUsers() {
+        return service.getUsers();
     }
 }

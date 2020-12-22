@@ -83,29 +83,10 @@ public class UserService {
     }
 
     public ResponseOrMessage<User> getPersonById(IdAndPersonTypeModel model) {
-        Long personId = model.getPersonId();
-        User user = userRepository.findById(personId).orElse(null);;
-       /* switch (user.getUserStatus()) {
-            case CLIENT:
-                user = userRepository.findById(personId).orElse(null);
-                break;
-            case TEACHER:
-                user = userRepository.findById(personId).orElse(null);
-                break;
-            case ADMIN:
-                user = userRepository.findById(personId).orElse(null);
-                break;
-            default:
-                return new ResponseOrMessage<>("Wrong with role parameter");
-        }*/
-
+        User user = userRepository.findById(model.getPersonId()).orElse(null);
         if (user == null) {
             return new ResponseOrMessage<>("Person not found");
         }
-/*
-        if (user.isDeleted()) {
-            return new ResponseOrMessage<>("Person was deleted");
-        }*/
         return new ResponseOrMessage<>(user);
     }
 
@@ -151,5 +132,9 @@ public class UserService {
 
     public Notification getSingleNotification(Long id) {
         return notificationRepository.findById(id).orElse(null);
+    }
+
+    public List<User> getUsers() {
+        return new ArrayList<>(userRepository.findAll());
     }
 }
