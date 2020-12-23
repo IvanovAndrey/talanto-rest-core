@@ -11,7 +11,6 @@ import java.util.List;
 
 @RestController
 public class SSEController {
-// SSE for all user TODO send events to concrete user (client)
     public static final List<SseEmitter> emitters = Collections.synchronizedList( new ArrayList<>());
 
     @RequestMapping(path = "/stream", method = RequestMethod.GET)

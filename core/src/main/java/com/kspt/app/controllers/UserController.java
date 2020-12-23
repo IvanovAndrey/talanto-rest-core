@@ -6,6 +6,8 @@ import com.kspt.app.entities.Notification;
 import com.kspt.app.entities.Request;
 import com.kspt.app.entities.actor.User;
 import com.kspt.app.models.info.ComplaintModel;
+import com.kspt.app.models.info.LessonModel;
+import com.kspt.app.models.info.NotificationModel;
 import com.kspt.app.models.info.RequestModel;
 import com.kspt.app.models.person.IdAndPersonTypeModel;
 import com.kspt.app.models.response.ResponseOrMessage;
@@ -32,6 +34,15 @@ public class UserController {
     @PostMapping("/setComplaint")
     public ResponseOrMessage<Complaint> setComplaint(@RequestBody ComplaintModel complaint) {
         return service.setComplaint(complaint);
+    }
+    @PostMapping("/setNotification")
+    public ResponseOrMessage<Notification> setNotification(@RequestBody NotificationModel notification) {
+        return service.setNotification(notification);
+    }
+
+    @PostMapping("/setLesson")
+    public ResponseOrMessage<Lesson> setLesson(@RequestBody LessonModel model) {
+        return service.setLesson(model);
     }
 
     @PostMapping("/setRequest")

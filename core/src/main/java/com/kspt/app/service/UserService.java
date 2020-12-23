@@ -7,6 +7,8 @@ import com.kspt.app.entities.Notification;
 import com.kspt.app.entities.Request;
 import com.kspt.app.entities.actor.User;
 import com.kspt.app.models.info.ComplaintModel;
+import com.kspt.app.models.info.LessonModel;
+import com.kspt.app.models.info.NotificationModel;
 import com.kspt.app.models.info.RequestModel;
 import com.kspt.app.models.person.RegistrationModel;
 import com.kspt.app.models.person.SignInModel;
@@ -66,7 +68,6 @@ public class UserService {
     public ResponseOrMessage<SignInResponse> signIn(SignInModel model) {
         if (!model.getLogin().isEmpty()) {
             final User user = userRepository.findByLogin(model.getLogin()).orElse(null);
-            //TODO Polymorphic Queries
             if (user != null) {
                 if(model.getPassword().equals(user.getPassword().replaceAll(" ", ""))){
                 SignInResponse response = new SignInResponse();
@@ -136,5 +137,74 @@ public class UserService {
 
     public List<User> getUsers() {
         return new ArrayList<>(userRepository.findAll());
+    }
+
+    public ResponseOrMessage<Notification> setNotification(NotificationModel model) {
+        Notification notification = new Notification(
+                model.getId_from(),
+                model.getId_to(),
+                model.getStatus(),
+                model.getTheme(),
+                model.getText()
+        );
+        if(userRepository.findById(model.getId_to()).orElse(null) == null) {
+            return new ResponseOrMessage<>("Пользователя с таким id не существует");
+        } else {
+            notificationRepository.save(notification);
+            return new ResponseOrMessage<>("Уведомление успешно отправлено");
+        }
+    }
+
+    public ResponseOrMessage<Lesson> setLesson(LessonModel model) {
+        if (model.getStudents().length == 0){
+            return new ResponseOrMessage<>("Необходимо ввести хотя бы одного ученика");
+        }
+        User teacher = userRepository.findById(model.getId_teacher()).orElse(null);
+        if (teacher == null) {
+            return new ResponseOrMessage<>("Учителя с таким id не существует");
+        }
+        if (!teacher.getStatus().equals("teacher")) {
+            return new ResponseOrMessage<>("Пользователь с таким id не является учителем");
+        }
+        for (int i = 0; i < model.getStudents().length; i++) {
+            User student = userRepository.findById(Long.parseLong(model.getStudents()[i])).orElse(null);
+            if (student == null) {
+                return new ResponseOrMessage<>("Ученика с id = " + model.getStudents()[i] + " не существует");
+            }
+            if (!student.getStatus().equals("client")) {
+                return new ResponseOrMessage<>("Ученик с id = " + model.getStudents()[i] + " не явлется клиентом");
+            }
+
+        }
+        Lesson lesson = lessonRepository.findByIdTeacherAndAndDateOfLesson(model.getId_teacher(),
+                model.getDate_of_lesson()).orElse(null);
+        if (lesson == null) {
+            lesson = new Lesson(
+                    model.getId_teacher(),
+                    model.getTheme(),
+                    model.getCommentary(),
+                    model.getStatus(),
+                    model.getDate_of_lesson()
+            );
+            lessonRepository.save(lesson);
+            lesson = lessonRepository.findByIdTeacherAndAndDateOfLesson(model.getId_teacher(),
+                    model.getDate_of_lesson()).orElse(null);
+            if (lesson != null) {
+                for (int i = 0; i < model.getStudents().length; i++) {
+                    ClientsOnLessons clientsOnLessons = new ClientsOnLessons(
+                            Long.parseLong(model.getStudents()[i]),
+                            lesson.getId(),
+                            "Планирует посетить",
+                            ""
+                    );
+                    clientsOnLessonsRepository.save(clientsOnLessons);
+                }
+                return new ResponseOrMessage<>("Урок был успешно создан");
+            } else {
+                return new ResponseOrMessage<>("Ошибка при создании урока");
+            }
+        } else {
+            return new ResponseOrMessage<>("У этого преподавателя уже есть урока в эту дату");
+        }
     }
 }
